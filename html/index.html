@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html lang="de">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Space Ball</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Startup">
+		<meta name="keywords" content="Space Ball">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--meta charset="UTF-8"-->
+		<meta name="author" content="Valentin Mugg">
+    <!--link rel="stylesheet" href="./css/w3.css"-->
+        <!--link rel="stylesheet" href="./css/w3-theme-black.css"-->
+        <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"-->
+        <link rel="stylesheet" href="css/layout.css">
+
+</head>
+
+<body id="myPage" class="main_body" onload="document.getElementById(&#39;id01&#39;).style.display=&#39;block&#39;" >
+
+    <!-- Sidebar on click  normalement invisible-->
+    <nav class="side_drop_navigation" id="mySidebar" style="display: none;">
+        <a href="javascript:void(0)" onclick="w3_close()" class="close_button">Close
+    <i class="fa fa-remove"></i>
+    </a>
+        <a href="./index.html#id01" class="link">Modal Nochmal</a>
+        <a href="./index.html#" class="link">Head Quarter</a>
+        <a href="./index.html#" class="link">Link 3</a>
+        <a href="./index.html#" class="link">Link 4</a>
+        <a href="./index.html#" class="link">Link 5</a>
+    </nav>
+
+    <!-- Navbar -->
+    <div class="navigation">
+        <div class="normal_navigation">
+            <img src="img/logo.jpeg" class="logo" alt="Space Ball">
+            <a href="./index.html#team" class="link hover-white">Team</a>
+            <a href="./index.html#work" class="link hover-white">Work</a>
+            <a href="./index.html#pricing" class="link hover-white">Price</a>
+            <a href="./index.html#contact" class="link hover-white">Contact</a>
+            <div class="drop_navigation dropdown">
+                <button class="w3-button" title="Notifications">Dropdown <i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content card-4 bar-block">
+                    <button onclick="document.getElementById(&#39;id01&#39;).style.display=&#39;block&#39;" class="dropdown-content" title="More Modal">More Modal</button>
+                    <br><a href="./index.html#" class="link dropdown-content">Link</a>
+                    <br><a href="./index.html#" class="link dropdown-content">Link</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="small_screen_navigation">
+            <a href="./index.html#team" class="item">Team</a>
+            <a href="./index.html#work" class="item">Work</a>
+            <a href="./index.html#pricing" class="item">Price</a>
+            <a href="./index.html#contact" class="item">Contact</a>
+            <a href="./index.html#" class="item">Search</a>
+        </div>
+    </div>
+
+    <!-- Image Header -->
+    <div class="container_logo_img">
+        <div class="Button_logo">
+            <img src="img/logo3.jpeg" class="Button_logo_img" alt="Space Ball">
+        </div>
+        <img src="./img/Soyuz_TMA-16.jpg" alt="Russan Space Ball boat TMA-16" class="Russan_Space_Ball">
+    </div>
+    <br>
+    <!--Modal-->
+    
+    <div id="id01" class="modal">
+        <div class="modal-content animate-top">
+           
+                <span onclick="document.getElementById(&#39;id01&#39;).style.display=&#39;none&#39;" class="invis"><i tabindex="1" class=" modal-button teal display-topright fa fa-remove">[X]</i></span>
+           
+            <div class="container">
+                <p>We use a session Cookie and there is no way around it</p>
+            </div>
+            <footer class="container teal">
+                <p>It will probably be automatically deleted if you leave this page</p>
+            </footer>
+        </div>
+    </div>
+    <!-- Team Container -->
+    <div class="Team_main" id="team">
+        <h1>OUR TEAM</h1>
+        <p>Meet the team</p>
+
+        <div class="row"><br>
+
+            <div class="quarter">
+                <img src="./img/Immanuel_Kant_3.jpg" alt="Boss" class="team_image">
+                <div class="Bild_unterschrift">
+                    <h3>Emanuel Kant</h3>
+                    <p>Laiser Designer</p>
+                </div>
+            </div>
+
+            <div class="quarter">
+                <img src="./img/MinenMaster.jpg" alt="Boss" class="team_image">
+                <div class="Bild_unterschrift">
+                    <h3>MinenMaster</h3>
+                    <p>Flyes some expensive Satelites</p>
+                </div>
+            </div>
+
+            <div class="quarter">
+                <img src="./img/Anouk.JPG" alt="Boss" class="team_image">
+                <div class="Bild_unterschrift">
+                    <h3>Anouk Mugg</h3>
+                    <p>Micro Manager</p>
+                </div>
+            </div>
+
+            <div class="quarter">
+                <img src="./img/chair.jpg" alt="Boss"  class="team_image">
+                <div class="Bild_unterschrift">
+                    <h3>Koi</h3>
+                    <p>Füttert die Fische</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Work Row -->
+    <div class="row main_work" id="work">
+
+        <div class="quarter container side_text">
+            <h2>Our Work</h2>
+            <p>We Provide top of the line deep space satelite comunications.</p>
+        </div>
+
+        <div class="quarter">
+            <div class="w3-card w3-white">
+                <img src="./img/The_station.jpg" alt="Snow" class="work_image">
+                <div class="container">
+                    <h3>European Space Agency</h3>
+                    <p>We provide a Hige Speed internet contection to the International Space Station so the ESA Astronauts can brows the web and watch youtoube tutorials</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="quarter">
+            <div class="w3-card w3-white">
+                <img src="./img/F-14_Tomcat.jpg" alt="Lights" class="work_image">
+                <div class="container">
+                    <h3>Lokeed Martin</h3>
+                    <p>For Lokeed we provide Drone Controls over Satelite so they can drop every bomb they have on to the anymes of freedom</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="quarter">
+            <div class="w3-card w3-white">
+                <img src="./img/Ariane_5.jpg" alt="Mountains" class="work_image">
+                <div class="container">
+                    <h3>NASA</h3>
+                    <p>For NASA we provide loseless comunications to the marsian surface so they can fly theyr FPV Drones in Low latency rases around the planent</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    
+    <!-- Container -->
+    <div class="w3-container" style="position:relative">
+        <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal" style="position:absolute;top:-28px;right:24px">+</a>
+    </div>
+
+    <!-- Pricing Row -->
+    <div class=" main_pricing" id="pricing">
+        <div class="container">
+            <h2>PRICING</h2>
+            <p>Choose a pricing plan that fits your needs.</p><br>
+        </div>
+        <div class="cell quarter">
+            <ul class="w3-ul w3-border w3-hover-shadow">
+                <li class="w3-theme">
+                    <p class="w3-xlarge">Basic</p>
+                </li>
+                <li class="w3-padding-16"><b>10Gbit/s</b> Bandwith</li>
+                <li class="w3-padding-16"><b>10</b> Satelites</li>
+                <li class="w3-padding-16"><b>Endless</b> Support</li>
+                <li class="w3-padding-16">
+                    <h2 class="w3-wide"><i class="fa fa-usd"></i> 10'000</h2>
+                    <span class="w3-opacity">per month</span>
+                </li>
+                <li class="w3-theme-l5 w3-padding-24">
+                    <button class="button teal "><i class="fa fa-check"></i> Sign Up</button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="cell quarter">
+            <ul class="w3-ul w3-border w3-hover-shadow">
+                <li class="w3-theme-l2">
+                    <p class="w3-xlarge">Pro</p>
+                </li>
+                <li class="w3-padding-16"><b>25Gbit/s</b> Bandwith</li>
+                <li class="w3-padding-16"><b>25</b> Satelites</li>
+                <li class="w3-padding-16"><b>Endless</b> Support</li>
+                <li class="w3-padding-16">
+                    <h2 class="w3-wide"><i class="fa fa-usd"></i> 25'000</h2>
+                    <span class="w3-opacity">per month</span>
+                </li>
+                <li class="w3-theme-l5 w3-padding-24">
+                    <button class="button teal"><i class="fa fa-check"></i> Sign Up</button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="cell quarter">
+            <ul class="w3-ul w3-border w3-hover-shadow">
+                <li class="w3-theme">
+                    <p class="w3-xlarge">Premium</p>
+                </li>
+                <li class="w3-padding-16"><b>50Gbit/s</b> Bandwith</li>
+                <li class="w3-padding-16"><b>50</b> Satelites</li>
+                <li class="w3-padding-16"><b>Endless</b> Support</li>
+                <li class="w3-padding-16">
+                    <h2 class="w3-wide"><i class="fa fa-usd"></i> 50'000</h2>
+                    <span class="w3-opacity">per month</span>
+                </li>
+                <li class="w3-theme-l5 w3-padding-24">
+                    <button class="button teal "><i class="fa fa-check"></i> Sign Up</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Contact Container -->
+    <div class="contact_main" id="contact">
+        <div class="w3-row">
+            <div class="w3-col m5">
+                <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
+                <h3>Address</h3>
+                <p>Swing by for a cup of coffee, or whatever.</p>
+                <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;Bern, CH</p>
+                <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;+41 79 155 66 77</p>
+                <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;Info@spaceball.net</p>
+            </div>
+            <div>
+                <form class="container card-4" action="https://www.w3schools.com/action_page.php" target="_blank">
+                    <div class="w3-section">
+                        <label>Name</label>
+                        <input class="w3-input" type="text" name="Name" required="">
+                    </div>
+                    <div class="w3-section">
+                        <label>Email</label>
+                        <input class="w3-input" type="text" name="Email" required="">
+                    </div>
+                    <div class="w3-section">
+                        <label>Message</label>
+                        <input class="w3-input" type="text" name="Message" required="">
+                    </div>
+                    <input class="w3-check" type="checkbox" checked="" name="Like">
+                    <label>I Like it!</label>
+                    <button type="submit" class="button">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image of location/map -->
+    <p class="Bottom uberschrift" >Ouer Headquarter
+    <img src="./img/Spain.jpg" class="image" style="width:100%;" alt="image of Head Quarter">
+    </p>
+    <!--open street map-->
+    <div class="map_container">
+        Where to finde us <br>
+        15th South Street <br>
+        Pentagon Washinton DC
+        <iframe class="map" width="425" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=-77.05980598926546%2C38.859351569311784%2C-77.05122292041779%2C38.863165260150566&amp;layer=hot"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=18/38.86126/-77.05551&amp;layers=H">View Larger Map</a></small>
+    </div>
+    <!-- Footer -->
+    <footer class="Bottom footer_main">
+        <h4>Follow Us</h4>
+        <p>So Elon and all the other social media hates us becaus we are a thred to them so we dont have any of those</p>
+            <a class="link" href="./index.html#" style="color: aliceblue;">Go To Top</a>
+    </footer>
+
+    <script>
+        // Script for side navigation
+        function w3_open() {
+            var x = document.getElementById("mySidebar");
+            x.style.width = "300px";
+            x.style.paddingTop = "10%";
+            x.style.display = "block";
+        }
+
+        // Close side navigation
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+
+        // Used to toggle the menu on smaller screens when clicking on the menu button
+        function openNav() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+    </body>
+
+</html>
